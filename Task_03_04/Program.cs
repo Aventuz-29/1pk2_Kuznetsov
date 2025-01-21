@@ -8,24 +8,20 @@
             пользователь вводить слово «exit» или пустую строку – ввод останавливается и выводиться количество строк
             введенных пользователем.*/
 
+            int quantity = 0;
+
             while (true)
             {
-
                 Console.Write("Введите текст: ");
                 string text = Console.ReadLine();
                 Console.Clear();
 
-                int quantity = 0;
-
-                while (text != "exit" || text != null)
+                if (text == "exit" || text == "")
                 {
-                    quantity++;
-                    Console.Write("Введите текст: ");
-                    text = Console.ReadLine();
-                    Console.Clear();
+                    Console.WriteLine(quantity);
+                    break;
                 }
-                Console.WriteLine(quantity);
-                break;
+                else quantity++;
             }
         }   
     }
