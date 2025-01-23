@@ -1,6 +1,4 @@
-﻿using System.Collections.Generic;
-
-namespace Task_03_07
+﻿namespace Task_03_07
 {
     internal class Program
     {
