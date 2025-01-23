@@ -11,15 +11,15 @@ namespace Task_03_05
             время работы программы*/
 
             Console.Write("Введите диапазон: \nОт: ");
-            double range_1 = Int32.Parse(Console.ReadLine());
+            double range_1 = Convert.ToDouble(Console.ReadLine());
             Console.Clear();
 
             Console.Write("До: ");
-            double range_2 = Int32.Parse(Console.ReadLine());
+            double range_2 = Convert.ToDouble(Console.ReadLine());
             Console.Clear();
 
             Console.Write("Введите шаг: ");
-            double step = Int32.Parse(Console.ReadLine());
+            double step = Convert.ToDouble(Console.ReadLine());
             Console.Clear();
             
             Console.WriteLine("Цельсия - Фаренгейт");

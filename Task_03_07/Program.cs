@@ -11,7 +11,7 @@
             double t = 0.5;
 
             Console.Write("Введите лимит: ");
-            double limit = Int32.Parse(Console.ReadLine());
+            double limit = Convert.ToDouble(Console.ReadLine());
             Console.Clear();
 
             Console.WriteLine("Скорость свободно падающего тела: \nВремя: \t   Скорость: ");
