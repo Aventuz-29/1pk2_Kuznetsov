@@ -10,10 +10,11 @@
             double g = 9.8;
             double t = 0.5;
 
-            Console.WriteLine("Скорость свободно падающего тела: \nВремя: \t   Скорость: ");
-
             Console.Write("Введите лимит: ");
             double limit = Int32.Parse(Console.ReadLine());
+            Console.Clear();
+
+            Console.WriteLine("Скорость свободно падающего тела: \nВремя: \t   Скорость: ");
 
             while (t <= limit)
             {
