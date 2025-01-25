@@ -1,7 +1,5 @@
-﻿using System.Security.Cryptography;
-
-namespace Task_04_06
-{
+﻿namespace Task_04_06
+{ 
     internal class Program
     {
         static void Main(string[] args)
@@ -12,7 +10,7 @@ namespace Task_04_06
 
             int size = 5;
             int[] num = new int[size];
-            bool[] bools = new bool[20];
+            bool[] bools = new bool[21];
             Random rnd = new Random();
             int max = -21;
             
