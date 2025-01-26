@@ -9,7 +9,6 @@
 
             int size = 50;
             int[] num = new int[size];
-            bool[] bools = new bool[30];
             int couples = 0;
             Random rnd = new Random();
 
