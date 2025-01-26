@@ -1,6 +1,4 @@
-﻿using System.Runtime.Intrinsics.X86;
-
-namespace Task_04_07
+﻿namespace Task_04_07
 {
     internal class Program
     {
@@ -29,15 +27,17 @@ namespace Task_04_07
                     averageboys += Math.Abs(height[i]);
                     boys++;
                 }
-                else
+                if (height[i] > 0)
+                {
                     averagegirls += Math.Abs(height[i]);
                     girls++;
+                }
             }
             averageboys = Math.Round(averageboys / boys, 1);
             averagegirls = Math.Round(averagegirls / girls, 1);
 
-            Console.WriteLine("Количество мальчиков в классе - " + boys + ", их средний рост - " + averageboys + ".");
-            Console.WriteLine("Количество девочек в классе - " + girls + ", их средний рост - " + averagegirls + ".");
+            Console.WriteLine("Количество мальчиков в классе - " + boys + ", их средний рост - " + averageboys + "м.");
+            Console.WriteLine("Количество девочек в классе - " + girls + ", их средний рост - " + averagegirls + "м.");
         }
     }
 }
