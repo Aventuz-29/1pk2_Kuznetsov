@@ -1,7 +1,4 @@
-﻿using System.Collections.Immutable;
-using System.Numerics;
-
-namespace Task_04_08
+﻿namespace Task_04_08
 {
     internal class Program
     {
