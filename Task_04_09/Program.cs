@@ -1,8 +1,4 @@
-﻿using System.ComponentModel.Design;
-using System.Numerics;
-using System.Xml;
-
-namespace Task_04_09
+﻿namespace Task_04_09
 {
     internal class Program
     {
@@ -22,25 +18,23 @@ namespace Task_04_09
             }
 
             Array.Sort(num);
-            foreach (int i in num)
-            {
-                Console.Write(i + " ");
-            }
-            Console.WriteLine();
+
+            Console.Write("Уникальные эдементы массива: ");
+
 
             for (int i = 0; i < size; i++)
             {
-                bools = true;
+                bools = false;
 
                 for (int j = 0; j < size; j++)
                 {
                     if (i != j && num[i] == num[j])
                     {
-                        bools = false;
+                        bools = true;
                         break;
                     }
                 }
-                if (bools)
+                if (!bools)
                 {
                     Console.Write(num[i] + " ");
                 }
