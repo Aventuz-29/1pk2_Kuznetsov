@@ -4,6 +4,7 @@
     {
         static void Main(string[] args)
         {
+            //создайте проект с классом Cat и Dog, полностью самостоятельно продумайте данные для объектов класса и их функционал
             Cat cat1 = new Cat();
             Dog dog1 = new Dog();
 
