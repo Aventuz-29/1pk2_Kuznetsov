@@ -1,7 +1,6 @@
-﻿using Task_13_02;
-using Task_13_03;
+﻿using Task_13_03;
 
-namespace Task_13_02
+namespace Task_13_03
 {
     internal class Program
     {
