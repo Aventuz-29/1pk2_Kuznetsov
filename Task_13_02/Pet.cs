@@ -9,11 +9,11 @@ namespace Task_13_02
     class Pet
     {
         #region поля
-        private string name;
-        private string view;
-        private double age;
-        private double weight;
-        private bool health = true;
+        private string name; //закрытое поле имени
+        private string view; //закрытое поле вида
+        private double age; //закрытое поле возроста
+        private double weight; //закрытое поле веса
+        private bool health = true; //закрытое поле здоровья
         #endregion
         #region свойства
         //открытое свойство имени
@@ -129,7 +129,7 @@ namespace Task_13_02
             Health = health;
         }
         /// <summary>
-        /// конструктор для инициализации без отметки о здоровье (по умолчанию здоров)
+        /// конструктор без отметки о здоровье (по умолчанию здоров)
         /// </summary>
         /// <param name="name">имя</param>
         /// <param name="view">вид животного</param>
@@ -143,7 +143,7 @@ namespace Task_13_02
             Weight = weight;
         }
         /// <summary>
-        ///  конструктор для инициализации без отметки о здоровье (по умолчанию здоров) и весе
+        ///  конструктор без отметки о здоровье (по умолчанию здоров) и весе
         /// </summary>
         /// <param name="name">имя</param>
         /// <param name="view"></param>
