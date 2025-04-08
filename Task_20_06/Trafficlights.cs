@@ -24,21 +24,25 @@ namespace Task_20_06
             {
                 if (Console.KeyAvailable && bools)
                 {
-                    Console.ReadKey(true); // Считываем нажатую клавишу
+                    // Переключение в ручной режим
+                    Console.ReadKey(true);
                     manualControl = true;
                     SwitchToNextColor();
                     Console.WriteLine("Ручной режим. Нажмите любую клавишу для следующего цвета. Нажмите 'A' для возврата в автоматический режим.");
                 }
                 else if (manualControl)
                 {
-                    // Ожидаем следующего нажатия клавиши в ручном режиме
+                    
                     var key = Console.ReadKey(true).Key;
+
+                    // Переключение в автоматический режим
                     if (key == ConsoleKey.A)
                     {
                         manualControl = false;
                         bools = true;
                         Console.WriteLine("Автоматический режим. Нажмите любую клавишу для ручного переключения.");
                     }
+                    // Ручной режим
                     else
                     {
                         bools = false;
