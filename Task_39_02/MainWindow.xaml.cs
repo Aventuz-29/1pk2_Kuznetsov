@@ -52,32 +52,6 @@ public partial class MainWindow : Window
         }
     }
 
-    /*private void SaveButton_Click(object sender, RoutedEventArgs e)
-    {
-        SaveFileDialog saveFileDialog = new SaveFileDialog()
-        {
-            DefaultExt = ".txt",
-            Title = "Сохранить",
-            InitialDirectory = Environment.GetFolderPath(Environment.SpecialFolder.Desktop)
-        };
-
-        try
-        {
-            if (saveFileDialog.ShowDialog() == true)
-            {
-                string fileName = saveFileDialog.FileName;
-                File.WriteAllText(fileName, ProdTextBox.Text);
-            }
-        }
-        catch (Exception ex)
-        {
-            MessageBox.Show(ex.Message,
-                "ошибка",
-                MessageBoxButton.YesNoCancel,
-                MessageBoxImage.Warning);
-        }
-    }*/
-
     private void addButton_Click(object sender, RoutedEventArgs e)
     {
         if (!string.IsNullOrWhiteSpace(ProdTextBox.Text))
